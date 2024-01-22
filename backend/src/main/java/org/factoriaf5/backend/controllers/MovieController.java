@@ -16,8 +16,8 @@ public class MovieController {
     }
 
     @GetMapping("/movies")
-    public List<String> getMovies(){
-        return List.of("Película 1", "Película 2", "Película 3");
+    public List<MovieResponse> getMovies( String title, Long id){
+        return List.of( new MovieResponse( title, id));
     }
 
     @PostMapping("/movies")
