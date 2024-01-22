@@ -5,16 +5,16 @@ public class MovieResponse {
     private String title;
     private Long id;
 
-    public MovieResponse(String title, Long id){
-        this.title = title;
+    public MovieResponse(Long id, String title){
         this.id = id;
+        this.title = title;
     }
 
     public String getTitle(){
-        return this.title;
+        return title;
     }
 
     public Long getId(){
-        return this.id;
+        return id;
     }
 }
